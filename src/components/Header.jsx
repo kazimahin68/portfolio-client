@@ -9,11 +9,11 @@ const Header = () => {
     const navItems = <>
         <li><a>Home</a></li>
         <li><Link>About</Link></li>
-        <li><a>Item 3</a></li>
+        <li><a href="#contact">Contact</a></li>
     </>
 
     return (
-        <div className="navbar">
+        <div className="navbar fixed bg-base-300 top-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

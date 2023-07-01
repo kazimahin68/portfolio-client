@@ -16,36 +16,49 @@ import react from '../../src/assets/react.png'
 import tailwind from '../../src/assets/tailwind css.png'
 import vscode from '../../src/assets/vs-code.png'
 import bootstrap from '../../src/assets/bootstrap.png'
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
     const titles = ["MERN stack Developer", "JavaScript Developer", "React Developer"];
+
+    const handleDownload = () =>{
+        const url = '/Resume_of_Kazi_Modasser_Hossain.pdf';
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = "Resume_of_Kazi_Modasser_Hossain.pdf";
+        anchor.click();
+    }
     return (
-        <div className='flex flex-col lg:flex-row items-center gap-20 w-4/5 mx-auto mt-12'>
+        <div className='flex flex-col lg:flex-row items-center gap-20 w-4/5 mx-auto mt-32'>
             <div className='w-full lg:w-1/2'>
                 <h3>Hi, I am Kazi Modasser Hossain</h3>
                 <h2 className="text-red-600 font-bold text-3xl">I am a <RotatingText items={titles}></RotatingText>
                 </h2>
-                <p>I am a passionate junior web developer with a strong proficiency in the MERN stack. I am a hardworking and dedicated individual, committed to delivering high-quality results. With a strong sense of integrity, I approach my work with honesty and transparency. As a self-motivated problem solver, I am constantly seeking opportunities to learn and grow in this ever-evolving field.</p>
+                <p className='mt-5'>I am a passionate junior web developer with a strong proficiency in the MERN stack. I am a hardworking and dedicated individual, committed to delivering high-quality results. With a strong sense of integrity, I approach my work with honesty and transparency. As a self-motivated problem solver, I am constantly seeking opportunities to learn and grow in this ever-evolving field.</p>
+                <div className='flex gap-5 mt-5'>
+                    <button className='btn' onClick={handleDownload}>Resume <FaDownload></FaDownload></button>
+                    <button className='btn'><a href="#contact">Hire Me</a></button>
+                </div>
             </div>
             <div className='w-full lg:w-1/2 flex flex-col justify-center items-center'>
                 <img className='rounded-full w-96 h-96' src={img} alt="" />
-                <div>
+                <div className='mt-10'>
                     <Marquee>
-                       <img src={mongodb} className='w-10 h-10 mx-2' alt="" />
-                       <img src={html} className='w-10 h-10 mx-2' alt="" />
-                       <img src={css} className='w-10 h-10 mx-2' alt="" />
-                       <img src={react} className='w-10 h-10 mx-2' alt="" />
-                       <img src={express} className='w-10 h-10 mx-2' alt="" />
-                       <img src={tailwind} className='w-10 h-10 mx-2' alt="" />
-                       <img src={bootstrap} className='w-10 h-10 mx-2' alt="" />
-                       <img src={vscode} className='w-10 h-10 mx-2' alt="" />
-                       <img src={figma} className='w-10 h-10 mx-2' alt="" />
-                       <img src={netlify} className='w-10 h-10 mx-2' alt="" />
-                       <img src={firebase} className='w-10 h-10 mx-2' alt="" />
-                       <img src={github} className='w-10 h-10 mx-2' alt="" />
-                       <img src={js} className='w-10 h-10 mx-2' alt="" />
-                       <img src={node} className='w-10 h-10 mx-2' alt="" />
-                       <img src={npm} className='w-10 h-10 mx-2' alt="" />
+                        <img src={mongodb} className='w-10 h-10 mx-2' alt="" />
+                        <img src={html} className='w-10 h-10 mx-2' alt="" />
+                        <img src={css} className='w-10 h-10 mx-2' alt="" />
+                        <img src={react} className='w-10 h-10 mx-2' alt="" />
+                        <img src={express} className='w-10 h-10 mx-2' alt="" />
+                        <img src={tailwind} className='w-10 h-10 mx-2' alt="" />
+                        <img src={bootstrap} className='w-10 h-10 mx-2' alt="" />
+                        <img src={vscode} className='w-10 h-10 mx-2' alt="" />
+                        <img src={figma} className='w-10 h-10 mx-2' alt="" />
+                        <img src={netlify} className='w-10 h-10 mx-2' alt="" />
+                        <img src={firebase} className='w-10 h-10 mx-2' alt="" />
+                        <img src={github} className='w-10 h-10 mx-2' alt="" />
+                        <img src={js} className='w-10 h-10 mx-2' alt="" />
+                        <img src={node} className='w-10 h-10 mx-2' alt="" />
+                        <img src={npm} className='w-10 h-10 mx-2' alt="" />
                     </Marquee>
                 </div>
             </div>
