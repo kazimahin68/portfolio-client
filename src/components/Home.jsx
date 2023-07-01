@@ -1,8 +1,16 @@
+import { useContext } from "react";
+import Header from "./Header";
+import { ThemeContext } from "../ThemeContext";
+import Contact from "./Contact";
+import About from "./About";
 
 const Home = () => {
+    const { darkMode } = useContext(ThemeContext);
     return (
-        <div>
-            <h2 className="text-red-600 font-extrabold text-center text-6xl">This is home page</h2>
+        <div className={`${darkMode ? "bg-black" : "bg-base-100"}`}>
+            <Header></Header>
+            <About></About>
+            <Contact></Contact>
         </div>
     );
 };
