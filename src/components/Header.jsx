@@ -1,12 +1,6 @@
-import { useContext } from "react";
-import { ThemeContext } from "../ThemeContext";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
-
-    const { toggleDarkMode} = useContext(ThemeContext)
-
-
     const navItems = <>
         <li><AnchorLink href="#home" offset={() => 150} className="font-bold text-white active:text-[#3498db]">Home</AnchorLink></li>
         <li><AnchorLink href="#skills" offset={() => 100} className="font-bold text-white">Skills</AnchorLink></li>
@@ -26,7 +20,7 @@ const Header = () => {
                         {navItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Kazi Modasser Hossain</a>
+                <a className="btn btn-ghost normal-case text-xl">Kazi Modasser</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -34,7 +28,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-[#3498db]" onClick={toggleDarkMode}>Button</a>
+                <AnchorLink href="#contact" className="btn btn-sm bg-[#3498db] font-bold border-0 hover:bg-[#2980b9]">Hire Me</AnchorLink>
             </div>
         </div>
     );

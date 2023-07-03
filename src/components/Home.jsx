@@ -5,6 +5,7 @@ import Skills from "./SKills";
 import Projects from "./Projects";
 import { Helmet } from "react-helmet";
 import AboutMe from "./AboutMe";
+import Footer from "./Footer";
 
 const Home = () => {
     // const { darkMode } = useContext(ThemeContext);
@@ -20,6 +21,7 @@ const Home = () => {
             <Projects></Projects>
             <AboutMe></AboutMe>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

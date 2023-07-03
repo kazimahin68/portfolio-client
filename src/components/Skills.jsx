@@ -25,7 +25,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>HTML</h2>
                             <p className='font-bold text-xl'>85%</p>
                         </div>
-                        <Line percent={85} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={85} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -35,7 +35,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>CSS</h2>
                             <p className='font-bold text-xl'>80%</p>
                         </div>
-                        <Line percent={80} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={80} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -45,7 +45,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>JavaScript</h2>
                             <p className='font-bold text-xl'>75%</p>
                         </div>
-                        <Line percent={75} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={75} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -55,7 +55,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Tailwind</h2>
                             <p className='font-bold text-xl'>85%</p>
                         </div>
-                        <Line percent={85} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={85} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -65,7 +65,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Bootstrap</h2>
                             <p className='font-bold text-xl'>80%</p>
                         </div>
-                        <Line percent={80} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={80} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -75,7 +75,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>React</h2>
                             <p className='font-bold text-xl'>70%</p>
                         </div>
-                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -85,7 +85,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Express</h2>
                             <p className='font-bold text-xl'>65%</p>
                         </div>
-                        <Line percent={65} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={65} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -95,7 +95,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>MongoDB</h2>
                             <p className='font-bold text-xl'>60%</p>
                         </div>
-                        <Line percent={60} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={60} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -105,7 +105,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Node.js</h2>
                             <p className='font-bold text-xl'>70%</p>
                         </div>
-                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -115,7 +115,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Figma</h2>
                             <p className='font-bold text-xl'>30%</p>
                         </div>
-                        <Line percent={30} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={30} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -125,7 +125,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>Firebase</h2>
                             <p className='font-bold text-xl'>60%</p>
                         </div>
-                        <Line percent={60} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={60} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>
@@ -135,7 +135,7 @@ const Skills = () => {
                             <h2 className='font-bold text-xl mb-1'>GitHub</h2>
                             <p className='font-bold text-xl'>70%</p>
                         </div>
-                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="#3498db" className='mb-1' />
                     </div>
                 </div>
             </div>

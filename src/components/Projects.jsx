@@ -12,7 +12,7 @@ const Projects = () => {
             <h2 className="font-extrabold text-center text-3xl">My Recent Projects</h2>
             <hr className='my-5 opacity-30 border-2' />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                <div className="card w-96 shadow-white shadow-inner z-0 mt-10 bg-[#34495e]">
+                <div className="card w-11/12 md:w-96 mx-auto shadow-white shadow-inner z-0 mt-10 bg-[#34495e]">
                     <div className='card-img h-80 overflow-hidden top-0 cursor-pointer'>
                         <img src="https://i.ibb.co/JFdF3JB/sportify1.png" className='p-2 rounded-xl object-cover w-full' alt="" loading='lazy' />
                     </div>
@@ -74,7 +74,7 @@ const Projects = () => {
                         </form>
                     </dialog>
                 </div>
-                <div className="card w-96 bg-[#34495e] shadow-white shadow-inner z-0 mt-10">
+                <div className="card w-11/12 md:w-96 mx-auto bg-[#34495e] shadow-white shadow-inner z-0 mt-10">
                     <div className='card-img h-80 overflow-hidden top-0 cursor-pointer'>
                         <img src="https://i.ibb.co/L6vYxWG/edu-1.png" className='p-2 rounded-xl object-cover w-full' alt="" loading='lazy' />
                     </div>
@@ -135,7 +135,7 @@ const Projects = () => {
                         </form>
                     </dialog>
                 </div>
-                <div className="card w-96 bg-[#34495e] shadow-white shadow-inner z-0 mt-10">
+                <div className="card w-11/12 mx-auto md:w-96 bg-[#34495e] shadow-white shadow-inner z-0 mt-10">
                     <div className='card-img h-80 overflow-hidden top-0 cursor-pointer'>
                         <img src="https://i.ibb.co/dgRRsFB/kitchen-home.png" className='p-2 rounded-xl object-cover w-full' alt="" loading='lazy' />
                     </div>

@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form"
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import Swal from "sweetalert2";
+import { BsSendFill } from "react-icons/bs";
 
 const Contact = () => {
     const {
@@ -11,7 +12,7 @@ const Contact = () => {
     } = useForm();
 
     const formRef = useRef(null);
-    console.log(formRef.current)
+    // console.log(formRef.current)
 
     const onSubmit = (data) => {
         console.log(data)
@@ -34,7 +35,7 @@ const Contact = () => {
 
 
     return (
-        <div className="p-12 mt-16 w-11/12 lg:w-4/5 mx-auto">
+        <div className="mt-16 w-11/12 lg:w-4/5 mx-auto">
             <h2 className='font-extrabold text-3xl text-center'>Contact Me</h2>
             <hr className='mt-5 mb-10 opacity-30 border-2' />
             <div id="contact" className="flex justify-center">
@@ -60,7 +61,9 @@ const Contact = () => {
                         <textarea {...register("message", { required: "Type Your Message Here" })} className="textarea textarea-bordered h-24 text-black" placeholder="Type Your Message"></textarea>
                         {errors.message && <p role="alert" className="text-red-500 text-left">{errors.message?.message}</p>}
                     </div>
-                    <input type="submit" value="Send" className="btn mt-5 text-center" />
+                    <div className="form-control w-1/2 md:w-1/4 lg:w-1/6 mx-auto mt-10">
+                        <button className="btn btn-sm bg-[#3498db] font-bold border-0 hover:bg-[#2980b9]"><input type="submit" value="Send"/><BsSendFill></BsSendFill></button>
+                    </div>
                 </form>
             </div>
         </div>
