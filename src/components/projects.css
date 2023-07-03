@@ -1,0 +1,14 @@
+.card-img img {
+    -o-object-fit: cover;
+    object-fit:cover;
+    -o-object-position: top center;
+    object-position:top center;
+    transition:all 5s ease-in-out;
+    height:100%;
+    width:100%;
+}
+
+.card-img:hover img {
+    -o-object-position: bottom center;
+    object-position: bottom center
+}

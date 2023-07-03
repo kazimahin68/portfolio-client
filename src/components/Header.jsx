@@ -1,19 +1,22 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import { ThemeContext } from "../ThemeContext";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
 
     const { toggleDarkMode} = useContext(ThemeContext)
 
+
     const navItems = <>
-        <li><a>Home</a></li>
-        <li><Link>About</Link></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><AnchorLink href="#home" offset={() => 150} className="font-bold text-white active:text-[#3498db]">Home</AnchorLink></li>
+        <li><AnchorLink href="#skills" offset={() => 100} className="font-bold text-white">Skills</AnchorLink></li>
+        <li><AnchorLink href="#projects" offset={() => 100} className="font-bold text-white">Projects</AnchorLink></li>
+        <li><AnchorLink href="#about" offset={() => 200} className="font-bold text-white">About</AnchorLink></li>
+        <li><AnchorLink href="#contact" offset={() => 50} className="font-bold text-white">Contact</AnchorLink></li>
     </>
 
     return (
-        <div className="navbar fixed bg-base-300 top-0">
+        <div className="navbar fixed bg-white text-black bg-opacity-20 top-0 z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,7 +34,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn" onClick={toggleDarkMode}>Button</a>
+                <a className="btn bg-[#3498db]" onClick={toggleDarkMode}>Button</a>
             </div>
         </div>
     );

@@ -14,8 +14,9 @@ import bootstrap from '../../src/assets/bootstrap.png'
 
 const Skills = () => {
     return (
-        <div className='w-11/12 lg:w-4/5 mx-auto mt-12'>
-            <h2 className='font-extrabold text-3xl mb-10 text-center'>Skills</h2>
+        <div id='skills' className='w-11/12 lg:w-4/5 mx-auto mt-16'>
+            <h2 className='font-extrabold text-3xl text-center'>My Skills</h2>
+            <hr className='mt-5 mb-10 opacity-30 border-2' />
             <div className=' grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div className='flex gap-5 items-center'>
                     <img src={html} className='w-10 h-10' alt="" />
@@ -102,9 +103,9 @@ const Skills = () => {
                     <div className='flex flex-col w-full'>
                         <div className='flex gap-5'>
                             <h2 className='font-bold text-xl mb-1'>Node.js</h2>
-                            <p className='font-bold text-xl'>40%</p>
+                            <p className='font-bold text-xl'>70%</p>
                         </div>
-                        <Line percent={40} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
+                        <Line percent={70} strokeWidth={1} trailWidth={1} strokeColor="red" className='mb-1' />
                     </div>
                 </div>
                 <div className='flex gap-5 items-center'>

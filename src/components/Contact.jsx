@@ -31,32 +31,38 @@ const Contact = () => {
         reset();
     }
 
+
+
     return (
-        <div id="contact" className="flex justify-center p-12 bg-slate-200 mt-12">
-            <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="p-12 bg-base-300 lg:w-1/2 w-11/12">
-                <div className="form-control w-full">
-                    <label className="label">
-                        <span className="label-text font-bold">Your Name</span>
-                    </label>
-                    <input {...register("name", { required: "Please type your name here" })} type="text" placeholder="Your Name" className="input input-bordered w-full" />
-                    {errors.name && <p role="alert" className="text-red-500 text-left">{errors.name?.message}</p>}
-                </div>
-                <div className="form-control w-full">
-                    <label className="label">
-                        <span className="label-text font-bold">Your Email</span>
-                    </label>
-                    <input {...register("email", { required: "Email Address is required" })} type="email" placeholder="Your Email Address" className="input input-bordered w-full" />
-                    {errors.email && <p role="alert" className="text-red-500 text-left">{errors.email?.message}</p>}
-                </div>
-                <div className="form-control w-full">
-                    <label className="label">
-                        <span className="label-text font-bold">What is your name?</span>
-                    </label>
-                    <textarea {...register("message", { required: "Type Your Message Here" })} className="textarea textarea-bordered h-24" placeholder="Your Message"></textarea>
-                    {errors.message && <p role="alert" className="text-red-500 text-left">{errors.message?.message}</p>}
-                </div>
-                <input type="submit" value="Send" className="btn mt-5 text-center" />
-            </form>
+        <div className="p-12 mt-16 w-11/12 lg:w-4/5 mx-auto">
+            <h2 className='font-extrabold text-3xl text-center'>Contact Me</h2>
+            <hr className='mt-5 mb-10 opacity-30 border-2' />
+            <div id="contact" className="flex justify-center">
+                <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="p-12 rounded-xl w-11/12 lg:w-4/5 shadow-white shadow-inner z-0 mt-10 bg-[#34495e]">
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text font-bold text-white">Your Name</span>
+                        </label>
+                        <input {...register("name", { required: "Please type your name here" })} type="text" placeholder="Your Name" className="input input-bordered text-black w-full" />
+                        {errors.name && <p role="alert" className="text-red-500 text-left">{errors.name?.message}</p>}
+                    </div>
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text font-bold text-white">Your Email</span>
+                        </label>
+                        <input {...register("email", { required: "Email Address is required" })} type="email" placeholder="Your Email Address" className="input input-bordered text-black w-full" />
+                        {errors.email && <p role="alert" className="text-red-500 text-left">{errors.email?.message}</p>}
+                    </div>
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text font-bold text-white">What is your name?</span>
+                        </label>
+                        <textarea {...register("message", { required: "Type Your Message Here" })} className="textarea textarea-bordered h-24 text-black" placeholder="Type Your Message"></textarea>
+                        {errors.message && <p role="alert" className="text-red-500 text-left">{errors.message?.message}</p>}
+                    </div>
+                    <input type="submit" value="Send" className="btn mt-5 text-center" />
+                </form>
+            </div>
         </div>
     );
 };
